@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Item List</title>
+</head>
+<body>
+    <h1>Item List</h1>
+    <ul>
+        {% for item in items %}
+            <li>
+                <a href="{% url 'item_detail' item.id %}">{{ item.name }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+위 코드를 참고하여 각 아이템의 이름을 클릭하면 해당 아이템의 상세 페이지로 넘어갈 수 있게 됩니다. 이렇게 하면 Django에서 간단하게 상세 페이지로의 이동을 구현할 수 있습니다.
+
+
+
+
+
